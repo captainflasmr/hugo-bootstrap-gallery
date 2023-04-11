@@ -1,0 +1,17 @@
+{{ partial "header" . }}
+<div class="container grid-inverse wrap content">
+  <!-- <p>{{ .Content }}</p> -->
+  <p><blockquote class="intro">
+      <!-- <img src="{{ .Site.Params.favicon | relURL }}" alt=""> -->
+      {{ .Site.Params.description }}
+    </blockquote>
+  </p>
+  <div class="row">
+    {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+    {{ range $paginator.Pages.ByDate.Reverse }}
+    {{ partial "card" . }}
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+  </div>
+</div>
+{{ partial "footer" . }}

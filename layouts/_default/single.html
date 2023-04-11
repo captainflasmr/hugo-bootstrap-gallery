@@ -1,0 +1,18 @@
+{{ partial "header" . }}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pb-12">
+      <div class="article-body" data-pagefind-body>
+        <h1 class="title">
+          {{ replaceRE
+          "^[[:digit:]]+.|__.*$|[z]*_s|Finished|_" "" .Title
+	  }}
+        </h1>
+	{{ partial "single-metas.html" . }}
+	{{ .Content }}
+      </div>
+      {{ partial "share" . }}
+    </div>
+  </div>
+</div>
+{{ partial "footer" . }}

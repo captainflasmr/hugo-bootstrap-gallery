@@ -1,0 +1,55 @@
+#+title: hugo-bootstrap-gallery
+#+options: toc:t author:t title:t
+#+startup: show2levels inlineimages
+#+author: James Dyer
+
+* hugo-bootstrap-gallery
+
+A hugo theme using bootstrap 4, focussed on a gallery look
+
+*NOTE: This theme is copied inspired https://github.com/hugo-bootstrap/hugo-bootstrap
+
+You can find a live site using this theme [here](http://emacs.dyerdwelling.family/).
+
+**  Screenshot
+
+**  Installation
+
+#+begin_src bash
+$ cd your_site_repo/
+$ mkdir themes
+$ cd themes
+$ git clone https://github.com/captainflasmr/hugo-bootstrap-gallery
+#+end_src
+
+See the [official Hugo themes documentation](http://gohugo.io/themes/installing) for more info.
+
+** Usage
+
+This theme expects a relatively standard Hugo blog/personal site layout:
+#+begin_src
+.
+└── content
+    ├── post
+    |   ├── post1.md
+    |   └── post2.md
+    ├── page
+    |   ├── about-me.md
+    |   ├── license.md
+    └── other_page.md
+#+end_src
+
+Just run `hugo --theme=hugo-bootstrap-gallery` to generate your site!
+
+** Configuration
+
+Please see the config file of the example site in this repo for details of confguration.
+
+*** Hugo
+
+An example of what your site's `config.toml` could look like. All theme-specific parameters are under `[params]` and standard Hugo parameters are used where possible.
+
+
+** Questions, ideas, bugs, pull requests?
+
+All feedback is welcome! Head over to the [issue tracker](https://github.com/captainflasmr/hugo-bootstrap-gallery/issues).
