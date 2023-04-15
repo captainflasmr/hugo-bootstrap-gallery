@@ -1,17 +1,18 @@
 
 # Table of Contents
 
-1.  [hugo-bootstrap-gallery](#org6280d00)
-    1.  [Screenshot](#orge43214f)
-    2.  [Installation](#orgd907bc4)
-    3.  [Usage](#org80b7e99)
-    4.  [Configuration](#org628ba40)
-        1.  [Hugo](#org789b723)
-    5.  [Questions, ideas, bugs, pull requests?](#orge43e7e9)
+1.  [hugo-bootstrap-gallery](#org1d38330)
+    1.  [file structure](#org4ea9e2a)
+    2.  [Screenshot](#orgfc6054f)
+    3.  [Installation](#orgc63aa9b)
+    4.  [Usage](#org11b3d66)
+    5.  [Configuration](#org133767a)
+        1.  [Hugo](#orgf4e2ade)
+    6.  [Questions, ideas, bugs, pull requests?](#org8d38ffe)
 
 
 
-<a id="org6280d00"></a>
+<a id="org1d38330"></a>
 
 # hugo-bootstrap-gallery
 
@@ -22,12 +23,57 @@ A hugo theme using bootstrap 4, focussed on a gallery look
 You can find a live site using this theme [here](<http://emacs.dyerdwelling.family/>).
 
 
-<a id="orge43214f"></a>
+<a id="org4ea9e2a"></a>
+
+## file structure
+
+hugo-bootstrap-gallery/
+
+    ├── archetypes
+    │   ├── default.md
+    │   └── page.md
+    ├── layouts
+    │   ├── 404.html
+    │   ├── _default
+    │   │   ├── index.json
+    │   │   ├── index.json.json
+    │   │   ├── list.html
+    │   │   ├── rss.xml
+    │   │   ├── section.html
+    │   │   ├── single.html
+    │   │   └── terms.html
+    │   ├── index.html
+    │   └── partials
+    │       ├── card.html
+    │       ├── card-metas.html
+    │       ├── disqus.html
+    │       ├── error-404.html
+    │       ├── footer.html
+    │       ├── header.html
+    │       ├── metas.html
+    │       ├── scripts.html
+    │       ├── search.html
+    │       ├── share.html
+    │       ├── single-metas.html
+    │       └── tags.html
+    ├── LICENSE.md
+    ├── static
+    │   ├── assets
+    │   │   └── css
+    │   │       └── bootstrap.css
+    │   └── scripts
+    │       └── fixedsearch
+    │           ├── fixedsearch.js
+    │           └── fuse.js
+    └── theme.toml
+
+
+<a id="orgfc6054f"></a>
 
 ## Screenshot
 
 
-<a id="orgd907bc4"></a>
+<a id="orgc63aa9b"></a>
 
 ## Installation
 
@@ -39,7 +85,7 @@ You can find a live site using this theme [here](<http://emacs.dyerdwelling.fami
 See the [official Hugo themes documentation](<http://gohugo.io/themes/installing>) for more info.
 
 
-<a id="org80b7e99"></a>
+<a id="org11b3d66"></a>
 
 ## Usage
 
@@ -47,32 +93,32 @@ This theme expects a relatively standard Hugo blog/personal site layout:
 
     .
     └── content
-        ├── post
-        |   ├── post1.md
-        |   └── post2.md
-        ├── page
-        |   ├── about-me.md
-        |   ├── license.md
-        └── other_page.md
+    	 ├── post
+    	 |   ├── post1.md
+    	 |   └── post2.md
+    	 ├── page
+    	 |   ├── about-me.md
+    	 |   ├── license.md
+    	 └── other_page.md
 
 Just run \`hugo &#x2013;theme=hugo-bootstrap-gallery\` to generate your site!
 
 
-<a id="org628ba40"></a>
+<a id="org133767a"></a>
 
 ## Configuration
 
 Please see the config file of the example site in this repo for details of confguration.
 
 
-<a id="org789b723"></a>
+<a id="orgf4e2ade"></a>
 
 ### Hugo
 
 An example of what your site's \`config.toml\` could look like. All theme-specific parameters are under \`[params]\` and standard Hugo parameters are used where possible.
 
 
-<a id="orge43e7e9"></a>
+<a id="org8d38ffe"></a>
 
 ## Questions, ideas, bugs, pull requests?
 
