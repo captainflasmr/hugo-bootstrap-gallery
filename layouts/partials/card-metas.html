@@ -1,7 +1,5 @@
 <div class="meta">
-  {{ range .Param "author" }}
-  {{ . }}
-  {{ end }}
+  {{ .Param "author" }}
   :
   <!-- published date -->
   {{ if not .Date.IsZero }}
