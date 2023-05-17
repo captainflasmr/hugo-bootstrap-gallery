@@ -1,4 +1,4 @@
-{{ partial "header" . }}
+{{ define "main" }}
 <div class="container grid-inverse wrap content">
   <p>{{ .Content }}</p>
   <div class="row">
@@ -9,4 +9,4 @@
     {{ template "_internal/pagination.html" . }}
   </div>
 </div>
-{{ partial "footer" . }}
+{{ end }}
