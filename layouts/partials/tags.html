@@ -1,44 +1,5 @@
 {{ define "main" }}
 <div class="container">
-<<<<<<< Updated upstream
-{{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-<!-- <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a> -->
-  <!-- <ul> -->
-    {{ range $key, $value := $taxonomy }}
-    <li> {{ $key }} </li>
-    <ul>
-      {{ range $value.Pages }}
-      <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-      {{ end }}
-    </ul>
-    {{ end }}
-    <!-- </ul> -->
-  <!-- </li> -->
-{{ end }}
-</ul>
-</div>
-{{ end }}
-
-{{ define "content" }}
-<div class="container">
-{{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-<!-- <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a> -->
-  <!-- <ul> -->
-    {{ range $key, $value := $taxonomy }}
-    <li> {{ $key }} </li>
-    <ul>
-      {{ range $value.Pages }}
-      <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
-      {{ end }}
-    </ul>
-    {{ end }}
-    <!-- </ul> -->
-  <!-- </li> -->
-{{ end }}
-</ul>
-</div>
-{{ end }}
-=======
   <div class="row">
     <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pb-12">
       <div class="article-body">
@@ -61,4 +22,3 @@
   </div>
 </div>
 {{ end }}
->>>>>>> Stashed changes
