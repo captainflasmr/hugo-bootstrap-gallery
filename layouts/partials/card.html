@@ -1,6 +1,5 @@
 <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 pb-3">
   <div class="card">
-
     {{ if and (isset .Params "thumbnail") (not (eq .Params.thumbnail "")) }}
     <a href="{{ .Permalink }}" itemprop="url">
       {{if or (in (substr .Params.thumbnail 0 7) "http://") (in (substr .Params.thumbnail 0 8) "https://")}}
@@ -19,7 +18,7 @@
           {{ replaceRE
           "^[[:digit:]]+.|__.*$|[z]*_s|Finished|_" "" .Title
           }}
-	</a>
+        </a>
       </p>
       <p class="card-text">
         {{ if .IsPage }}
@@ -34,7 +33,7 @@
 
     <div class="card-footer">
       <small>
-      {{ partial "card-metas.html" . }}
+        {{ partial "metas.html" . }}
       </small>
     </div>
   </div>
