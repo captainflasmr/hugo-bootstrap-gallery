@@ -23,9 +23,9 @@
       <p class="card-text">
         {{ if .IsPage }}
         {{ if .Description }}
-        {{ .Description | markdownify | truncate 120 }}
+        {{ .Description | markdownify | truncate 80 }}
         {{ else }}
-        {{ .Summary | truncate 120}}
+        {{ .Summary | truncate 80}}
         {{ end }}
         {{ end }}
       </p>
