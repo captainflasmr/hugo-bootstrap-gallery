@@ -7,12 +7,9 @@ draft: false
 thumbnail: "/images/banner/james.jpg"
 ---
 
-{{< columns 12 12 6 6 6 >}}
-
 ## Bio {#bio}
 
 I live in the world.
-
 
 ## Contact {#contact}
 
@@ -22,13 +19,9 @@ I live in the world.
 
 ---
 
-
 ## My Web {#my-web}
 
 ---
-
----||---
-
 
 ## Favourite Linux Distributions {#favourite-linux-distributions}
 
@@ -47,5 +40,3 @@ I live in the world.
 ## Favourite Games {#favourite-games}
 
 ## Tools of the Trade {#tools-of-the-trade}
-
-{{< /columns >}}

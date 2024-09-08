@@ -1,17 +1,20 @@
 canonifyurls = false
 relativeURL = true
-paginate = 24
 theme = "hugo-bootstrap-gallery"
 DefaultContentLanguage = "en"
 
-disqusShortname = ""
-DisqusShortname = ""
+[pagination]
+  disableAliases = false
+  pagerSize = 96
+  path = 'page'
 
-[languages]
-  [languages.en]
-    mainSections = ["art--gallery", "emacs", "posts"]
+[Services.Disqus]
+  Shortname = "https-www-emacs-dyerdwelling-family"
+
+[params]
+    mainSections = ["art--gallery", "emacs", "posts", "gallery"]
     title = "the DyerDwelling / emacs"
-    copyright = "© 2023 James Dyer all rights reserved"
+    copyright = "© 2024 James Dyer all rights reserved"
     custom_css = ["assets/css/bootstrap.css", "assets/css/style.css"]
     favicon = "/images/banner/favicon-james.png"
     site_logo = "/images/banner/made-with-emacs.jpg"
